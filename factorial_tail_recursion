@@ -1,0 +1,9 @@
+object session {
+  def factorial (n: Int): Int = {
+    def loop1(acc:Int, n:Int) :Int=
+      if (n==0) acc
+      else loop1(acc * n , n-1)
+    loop1(1, n)
+    }
+  factorial(4)
+}
